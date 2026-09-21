@@ -1,27 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALLWORKS | Home Repairs, Maintenance & Renovations – Upington</title>
-  <meta name="description" content="ALLWORKS – Professional home repairs, maintenance, installations and renovations in Upington, Northern Cape. Small jobs. Big impact. Free quotes. Fully insured.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07121f">
+  <meta name="description" content="ALLWORKS provides professional home repairs, maintenance, installations and renovations in Upington and the Northern Cape.">
+  <title>ALLWORKS | Home Repairs, Maintenance &amp; Renovations</title>
   <style>
-:root{
-  --navy:#07121f;
-  --navy-2:#0f1f33;
-  --navy-3:#162a42;
-  --gold:#d4af37;
-  --gold-light:#f0d060;
-  --gold-dark:#a88b1f;
-  --cream:#f5f0e6;
-  --cream-dark:#ebe4d6;
-  --white:#fff;
-  --text:#121a24;
-  --muted:#5a6570;
-  --line:rgba(7,18,31,.12);
-  --shadow:0 20px 55px rgba(5,15,28,.18);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:Inter,"Segoe UI",system-ui,-apple-system,sans-
+    :root{--navy:#07121f;--navy2:#10243b;--gold:#d4af37;--gold2:#f0d060;--cream:#f4efe7;--ink:#101922;--muted:#596772;--shadow:0 22px 60px #05101c2e}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,"Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}a{text-decoration:none;color:inherit}button,input{font:inherit}
+    header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:16px 5%;background:#07121ff5;color:#fff;box-shadow:0 6px 26px #00000040;backdrop-filter:blur(12px)}.logo{font-size:1.55rem;font-weight:900;letter-spacing:2px}.logo span,.gold{color:var(--gold2)}.header-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:800;transition:.25s}.header-cta{padding:11px 22px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy)}
+    .hero{min-height:680px;display:grid;place-items:center;text-align:center;padding:100px 5%;color:#fff;background:linear-gradient(108deg,#050c16f5,#081220dc,#09121d99),url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2400&q=90") center/cover}.hero-inner{max-width:950px}.eyebrow,.kicker{color:var(--gold2);font-size:.78rem;font-weight:900;letter-spacing:2.4px;text-transform:uppercase}.hero h1{font-size:clamp(3rem,8vw,6rem);line-height:1;letter-spacing:-.06em;margin:18px 0}.hero p{max-width:720px;margin:0 auto 32px;font-size:1.2rem;color:#ffffffe8}.actions{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}.btn{padding:16px 26px;border:1px solid transparent}.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);box-shadow:0 14px 35px #d4af3752}.btn-outline{border-color:#ffffff99;color:#fff;background:#ffffff14}.btn:hover,.header-cta:hover{transform:translateY(-3px)}
+    .trust{position:relative;margin:-42px auto 0;z-index:2;max-width:1100px;background:#fff;border-radius:22px;padding:20px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;box-shadow:var(--shadow)}.trust div{text-align:center;padding:6px;border-right:1px solid #07121f1f;font-weight:800;color:var(--navy);font-size:.85rem}.trust div:last-child{border:0}.trust b{display:block;color:var(--gold);font-size:1.45rem}
+    section{padding:90px 5%}.section-head{text-align:center;max-width:760px;margin:0 auto 42px}.section-head h2{font-size:clamp(2.1rem,5vw,3.1rem);color:var(--navy);line-height:1.1;margin:8px 0 12px}.section-head p{color:var(--muted)}.services{background:linear-gradient(#f4efe7f2,#f4efe7f7),url("https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=2000&q=85") center/cover}.grid{max-width:1160px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #d4af3733;border-radius:22px;overflow:hidden;box-shadow:0 12px 32px #07142217;transition:.3s}.card:hover{transform:translateY(-7px);box-shadow:0 24px 48px #07142229}.card-img{height:175px;background:center/cover}.card-body{padding:22px}.card h3{color:var(--navy);font-size:1.2rem;margin-bottom:6px}.card p{color:var(--muted);font-size:.95rem}
+    .about{color:#fff;background:linear-gradient(100deg,#050c16f5,#081220e0),url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=90") center/cover}.about-wrap{max-width:1160px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.about h2{font-size:clamp(2.1rem,5vw,3.1rem);line-height:1.1;margin:8px 0 20px}.about p{color:#ffffffe0;margin-bottom:16px}.about .kicker{color:var(--gold2)}.about-photo{min-height:350px;border-radius:26px;background:url("https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1300&q=90") center/cover;border:2px solid #ffffff2b;box-shadow:0 30px 62px #0006}.badge{display:inline-block;margin-top:12px;padding:10px 18px;border:1px solid #d4af3780;border-radius:999px;color:var(--gold2);font-weight:800}
+    .contact{background:linear-gradient(#f4efe7f5,#f4efe7f8),url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2000&q=85") center/cover}.contact-box{max-width:620px;margin:auto;padding:42px;background:#fffffff7;border:1px solid #d4af3733;border-radius:26px;box-shadow:var(--shadow)}.contact-box h2{text-align:center;color:var(--navy);font-size:2.2rem;margin:7px 0}.contact-box>p{text-align:center;color:var(--muted);margin-bottom:25px}.kicker{text-align:center;color:#a88b1f}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{margin-bottom:16px}.field label{display:block;font-weight:800;color:var(--navy);font-size:.84rem;margin-bottom:5px}.field input{width:100%;min-height:50px;padding:12px 14px;border:1px solid #d7dce1;border-radius:12px;background:#fafbfc}.field input:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 4px #d4af3720}.wa,.email{display:flex;width:100%;justify-content:center;padding:15px;border:0;border-radius:13px;color:#fff;font-weight:900;cursor:pointer}.wa{background:#25d366;box-shadow:0 12px 30px #25d36638}.email{margin-top:16px;background:var(--navy)}.direct{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px;padding-top:22px;border-top:1px solid #e8e5df}.direct a{padding:14px;border-radius:13px;background:#faf8f4;font-weight:800;color:var(--navy);font-size:.9rem}.direct small{display:block;color:#8a929a;text-transform:uppercase;font-size:.68rem}
+    footer{padding:42px 5%;text-align:center;background:#040b14;color:#ffffffbf}footer p{margin:5px}.mobile{display:none}
+    @media(max-width:800px){.trust{grid-template-columns:repeat(3,1fr);margin-left:4%;margin-right:4%}.trust div:nth-child(3){border:0}.grid{grid-template-columns:repeat(2,1fr)}.about-wrap{grid-template-columns:1fr}.about-photo{min-height:250px}.mobile{display:block;position:fixed;bottom:0;left:0;right:0;z-index:20;padding:12px;background:#07121fe8}.mobile a{display:block;text-align:center;padding:13px;border-radius:14px;background:#25d366;color:#fff;font-weight:900}}
+    @media(max-width:560px){header{padding:13px 4%}.logo{font-size:1.3rem}.header-cta{padding:9px 14px;font-size:.82rem}.hero{min-height:610px;padding:80px 5%}.hero h1{font-size:clamp(2.7rem,13vw,4.4rem)}section{padding:65px 5%}.trust{grid-template-columns:repeat(2,1fr);margin-top:-27px}.trust div{border:0!important;border-top:1px solid #07121f1f!important;padding-top:13px}.trust div:first-child,.trust div:nth-child(2){border-top:0!important}.grid{grid-template-columns:1fr}.form-row,.direct{grid-template-columns:1fr}.contact-box{padding:30px 18px}body{padding-bottom:72px}}
+  </style>
+</head>
+<body>
+  <header><a class="logo" href="#top">ALL<span>WORKS</span></a><a class="header-cta" href="#contact">Get a Quote</a></header>
+  <main id="top">
+    <section class="hero"><div class="hero-inner"><div class="eyebrow">Home Repairs • Maintenance • Renovations</div><h1>SMALL JOBS.<br><span class="gold">BIG IMPACT.</span></h1><p>Professional home repairs, maintenance and renovations in Upington and the Northern Cape — every job handled with skill, care and attention to detail.</p><div class="actions"><a class="btn btn-gold" href="#contact">Get a Free Quote</a><a class="btn btn-outline" href="tel:+27684833189">Call 068 483 3189</a></div></div></section>
+    <div class="trust"><div><b>✓</b>Reliable &amp; Trusted</div><div><b>★</b>Quality Craftsmanship</div><div><b>⏱</b>On Time &amp; Efficient</div><div><b>♥</b>Customer Satisfaction</div><div><b>R</b>Competitive Pricing</div></div>
+    <section class="services"><div class="section-head"><div class="kicker">What we do</div><h2>Our Services</h2><p>One professional team for all your home-improvement needs in Upington and surrounding areas.</p></div><div class="grid">
+      <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=85')"></div><div class="card-body"><h3>Home Repairs</h3><p>Leaks, broken fixtures and general household repairs handled properly.</p></div></article>
+      <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=85')"></div><div class="card-body"><h3>Maintenance</h3><p>Regular upkeep and preventative care to keep your home in top shape.</p></div></article>
+      <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=85')"></div><div class="card-body"><h3>Installations</h3><p>Fixtures, fittings and improvements installed right the first time.</p></div></article>
+      <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=85')"></div><div class="card-body"><h3>Renovations</h3><p>Fresh spaces and better living, from bathrooms to full upgrades.</p></div></article>
+      <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=85')"></div><div class="card-body"><h3>Painting &amp; Finishing</h3><p>Clean, professional finishes that protect and beautify your property.</p></div></article>
+      <article class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=85')"></div><div class="card-body"><h3>Outdoor Upgrades</h3><p>Decks, patios and outdoor improvements built for the Northern Cape.</p></div></article>
+    </div></section>
+    <section class="about"><div class="about-wrap"><div><div class="kicker">Built on quality</div><h2>Your Home. Our Expertise.</h2><p>ALLWORKS is a local home-improvement team proudly serving <strong>Upington and the Northern Cape, South Africa</strong>. We take on small jobs and larger projects with the same care, skill and professionalism.</p><p>Free quotes. No job too big or too small.</p><span class="badge">Upington, Northern Cape</span></div><div class="about-photo" aria-label="Home improvement project"></div></div></section>
+    <section class="contact" id="contact"><div class="contact-box"><div class="kicker">Let's get started</div><h2>Request a Free Quote</h2><p>Tell us about the job and choose how you would like to contact ALLWORKS.</p><form id="quoteForm" novalidate><div class="form-row"><div class="field"><label for="name">Name</label><input id="name" name="name" required autocomplete="name" placeholder="Your name"></div><div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="068 483 3189"></div></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div><div class="field"><label for="service">Service needed</label><input id="service" name="service" required placeholder="e.g. Bathroom renovation"></div><div class="form-row"><div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div><div class="field"><label for="details">Extra details</label><input id="details" name="details" placeholder="Brief description"></div></div><button class="wa" type="submit">💬 Request Quote on WhatsApp</button><a class="email" href="mailto:allworks.ruben@gmail.com?subject=ALLWORKS%20Quote%20Request">✉ Email ALLWORKS</a></form><div class="direct"><a href="tel:+27684833189"><small>Call us</small>068 483 3189</a><a href="mailto:allworks.ruben@gmail.com"><small>Email us</small>allworks.ruben@gmail.com</a></div></div></section>
+  </main>
+  <footer><p><strong class="gold">ALLWORKS</strong> — Installations | Repairs | Renovations</p><p>Upington, Northern Cape, South Africa</p><p>© 2026 ALLWORKS. All rights reserved.</p></footer>
+  <div class="mobile"><a href="https://wa.me/27684833189?text=Hi%20ALLWORKS%2C%20I%20would%20like%20a%20free%20quote." target="_blank" rel="noopener">💬 Quote on WhatsApp</a></div>
+  <script>
+    const form=document.getElementById('quoteForm');
+    const date=document.getElementById('date');
+    if(date) date.min=new Date().toISOString().split('T')[0];
+    form.addEventListener('submit',event=>{event.preventDefault();if(!form.checkValidity()){form.reportValidity();return;}const value=id=>document.getElementById(id).value.trim();const lines=['Hi ALLWORKS, I would like a free quote.','',`Name: ${value('name')}`,`Phone: ${value('phone')}`,`Email: ${value('email')}`,`Service needed: ${value('service')}`,value('date')?`Preferred date: ${value('date')}`:'',value('details')?`Extra details: ${value('details')}`:'','', 'Please get back to me. Thank you!'].filter(Boolean);const url=new URL('https://wa.me/27684833189');url.searchParams.set('text',lines.join('\n'));window.open(url.toString(),'_blank','noopener');});
+  </script>
+</body>
+</html>
