@@ -3,416 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07121f">
   <title>ALLWORKS | Home Repairs, Maintenance & Renovations – Upington</title>
   <meta name="description" content="ALLWORKS – Professional home repairs, maintenance, installations and renovations in Upington, Northern Cape. Small jobs. Big impact. Free quotes. Fully insured.">
   <style>
-:root{
-  --navy:#0a1726;
-  --navy-2:#12263d;
-  --gold:#c9a227;
-  --gold-light:#e2c45b;
-  --cream:#f7f3eb;
-  --white:#fff;
-  --text:#18202a;
-  --muted:#66717d;
-  --line:rgba(10,23,38,.10);
-  --shadow:0 18px 50px rgba(7,20,34,.12);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:Inter,"Segoe UI",system-ui,-apple-system,sans-serif;
-  color:var(--text);line-height:1.65;background:var(--cream);
-  overflow-x:hidden;
-}
-a{text-decoration:none;color:inherit}
-button,input{font:inherit}
-
-/* Header */
-header{
-  background:rgba(10,23,38,.94);color:#fff;padding:.85rem 5%;
-  display:flex;justify-content:space-between;align-items:center;
-  position:sticky;top:0;z-index:100;box-shadow:0 3px 22px rgba(0,0,0,.18);
-  backdrop-filter:blur(14px);
-}
-.logo{font-size:1.55rem;font-weight:900;letter-spacing:1.8px}
-.logo span{color:var(--gold-light)}
-.header-cta{
-  background:var(--gold);color:var(--navy);padding:.65rem 1.2rem;
-  border-radius:999px;font-weight:800;font-size:.92rem;transition:.25s;
-}
-.header-cta:hover{background:var(--gold-light);transform:translateY(-2px)}
-
-/* Hero */
-.hero{
-  min-height:650px;padding:7rem 5% 6.5rem;color:#fff;position:relative;
-  display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;
-  background:
-    linear-gradient(90deg,rgba(5,14,24,.91),rgba(8,23,39,.72),rgba(8,23,39,.54)),
-    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2200&q=85")
-    center/cover no-repeat;
-}
-.hero:after{
-  content:"";position:absolute;inset:auto -10% -90px;height:190px;
-  background:var(--cream);transform:rotate(-2.5deg);transform-origin:center;
-}
-.hero:before{
-  content:"";position:absolute;inset:0;
-  background:
-    radial-gradient(circle at 80% 25%,rgba(201,162,39,.28),transparent 24%),
-    radial-gradient(circle at 15% 80%,rgba(201,162,39,.12),transparent 28%);
-  pointer-events:none;
-}
-.hero-content{position:relative;z-index:2;max-width:900px;animation:heroIn .8s ease both}
-.eyebrow{
-  display:inline-flex;align-items:center;gap:.55rem;
-  color:var(--gold-light);font-weight:800;letter-spacing:2px;text-transform:uppercase;
-  font-size:.78rem;margin-bottom:1rem;
-}
-.eyebrow:before,.eyebrow:after{content:"";width:34px;height:1px;background:var(--gold)}
-.hero h1{font-size:clamp(2.7rem,7vw,5.2rem);line-height:1.02;font-weight:900;margin-bottom:1.25rem;text-shadow:0 5px 28px rgba(0,0,0,.4)}
-.hero h1 .gold{color:var(--gold-light)}
-.hero p{font-size:clamp(1rem,2vw,1.22rem);max-width:680px;margin:0 auto 2.2rem;color:rgba(255,255,255,.92)}
-.hero-buttons{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-  padding:1rem 1.6rem;border-radius:999px;font-weight:800;font-size:1rem;
-  transition:.25s;border:1px solid transparent;cursor:pointer;
-}
-.btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 10px 30px rgba(201,162,39,.28)}
-.btn-gold:hover{background:var(--gold-light);transform:translateY(-3px);box-shadow:0 14px 34px rgba(201,162,39,.38)}
-.btn-outline{background:rgba(255,255,255,.09);color:#fff;border-color:rgba(255,255,255,.55);backdrop-filter:blur(8px)}
-.btn-outline:hover{background:#fff;color:var(--navy);transform:translateY(-3px)}
-
-/* Trust strip */
-.trust-bar{
-  position:relative;z-index:5;background:#fff;margin:-34px auto 0;max-width:1120px;
-  border-radius:18px;padding:1.25rem 1.5rem;display:grid;
-  grid-template-columns:repeat(5,1fr);gap:1rem;box-shadow:var(--shadow);
-}
-.trust-item{text-align:center;padding:.35rem .5rem;border-right:1px solid var(--line)}
-.trust-item:last-child{border-right:0}
-.trust-item .icon{font-size:1.35rem;color:var(--gold);margin-bottom:.1rem}
-.trust-item p{font-size:.78rem;font-weight:800;color:var(--navy);line-height:1.25}
-
-/* Sections */
-section{padding:5.5rem 5%}
-.section-kicker{text-align:center;color:var(--gold);font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:.75rem;margin-bottom:.5rem}
-.section-title{text-align:center;font-size:clamp(1.9rem,4vw,2.65rem);font-weight:900;color:var(--navy);margin-bottom:.65rem;line-height:1.15}
-.section-subtitle{text-align:center;color:var(--muted);margin:0 auto 2.8rem;max-width:650px}
-
-/* Services */
-.services-section{
-  position:relative;overflow:hidden;
-  background:
-    linear-gradient(rgba(247,243,235,.94),rgba(247,243,235,.94)),
-    url("https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1800&q=80")
-    center/cover fixed;
-}
-.services-section:after{
-  content:"";position:absolute;width:260px;height:260px;border-radius:50%;
-  border:1px solid rgba(201,162,39,.18);right:-110px;top:80px;
-  box-shadow:0 0 0 35px rgba(201,162,39,.035),0 0 0 70px rgba(201,162,39,.025);
-}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem;max-width:1120px;margin:0 auto;position:relative;z-index:2}
-.service-card{
-  background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:18px;
-  padding:1.65rem;box-shadow:0 8px 25px rgba(7,20,34,.06);
-  transition:.3s;position:relative;overflow:hidden;
-}
-.service-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gold);transform:scaleY(.3);transform-origin:bottom;transition:.3s}
-.service-card:hover{transform:translateY(-8px);box-shadow:0 18px 38px rgba(7,20,34,.13)}
-.service-card:hover:before{transform:scaleY(1)}
-.service-icon{
-  width:48px;height:48px;border-radius:14px;background:rgba(201,162,39,.12);
-  display:grid;place-items:center;color:var(--gold);font-size:1.35rem;margin-bottom:1rem;
-}
-.service-card h3{color:var(--navy);font-size:1.08rem;margin-bottom:.45rem;font-weight:850}
-.service-card p{color:var(--muted);font-size:.92rem}
-
-/* About */
-.about{
-  color:#fff;position:relative;overflow:hidden;text-align:left;
-  background:
-    linear-gradient(90deg,rgba(6,15,24,.96),rgba(10,23,38,.88)),
-    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85")
-    center/cover no-repeat;
-}
-.about-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
-.about .section-kicker{text-align:left}
-.about .section-title{text-align:left;color:#fff}
-.about p{max-width:680px;margin:0 0 1rem;color:rgba(255,255,255,.84)}
-.area-badge{display:inline-flex;margin-top:1rem;background:rgba(201,162,39,.14);color:var(--gold-light);padding:.65rem 1.15rem;border-radius:999px;font-weight:750;border:1px solid rgba(201,162,39,.55)}
-.about-photo{
-  min-height:310px;border-radius:24px;border:1px solid rgba(255,255,255,.2);
-  background:
-    linear-gradient(180deg,transparent,rgba(0,0,0,.25)),
-    url("https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=85")
-    center/cover;
-  box-shadow:0 22px 55px rgba(0,0,0,.3);transform:rotate(2deg);
-}
-
-/* Contact */
-.contact{
-  background:
-    linear-gradient(rgba(247,243,235,.96),rgba(247,243,235,.96)),
-    url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80")
-    center/cover;
-}
-.contact-box{max-width:540px;margin:auto;background:rgba(255,255,255,.97);border-radius:24px;padding:2.5rem;box-shadow:var(--shadow);text-align:center;border:1px solid rgba(201,162,39,.22)}
-.contact-box h2{color:var(--navy);font-size:1.9rem;margin-bottom:.35rem}
-.contact-box>p{color:var(--muted);margin-bottom:1.7rem;font-size:.94rem}
-.form-group{margin-bottom:1rem;text-align:left}
-.form-group label{display:block;font-size:.82rem;font-weight:800;color:var(--navy);margin-bottom:.35rem}
-.form-group input{width:100%;padding:.9rem 1rem;border:1.5px solid #d9dde1;border-radius:10px;background:#fbfbfb;transition:.2s}
-.form-group input:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(201,162,39,.10)}
-.whatsapp-btn{display:flex;align-items:center;justify-content:center;gap:.7rem;width:100%;background:#25d366;color:#fff;padding:1.05rem;border-radius:12px;font-size:1.05rem;font-weight:850;margin-top:.55rem;border:0;cursor:pointer;transition:.25s;box-shadow:0 8px 24px rgba(37,211,102,.22)}
-.whatsapp-btn:hover{background:#1fae55;transform:translateY(-2px)}
-.phone-link{display:block;font-size:1.4rem;font-weight:900;color:var(--navy);margin:1.35rem 0 .3rem}
-.phone-link:hover{color:var(--gold)}
-.contact-note{font-size:.82rem;color:var(--muted);margin-top:.75rem}
-
-/* Footer */
-footer{background:#050d16;color:rgba(255,255,255,.72);text-align:center;padding:2.5rem 5%;font-size:.88rem}
-footer .gold{color:var(--gold-light)}
-footer p{margin:.3rem 0}
-
-
-/* Contact form refinement */
-.contact-kicker{
-  color:var(--gold);font-weight:900;text-transform:uppercase;
-  letter-spacing:2px;font-size:.72rem;margin-bottom:.45rem;
-}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-group label span{font-weight:500;color:#8a929a}
-.form-group input{min-height:50px}
-.contact-divider{
-  display:flex;align-items:center;gap:.8rem;color:#8a929a;
-  font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;
-  margin:1.35rem 0;
-}
-.contact-divider:before,.contact-divider:after{
-  content:"";height:1px;background:#e4e6e8;flex:1;
-}
-.email-btn{
-  display:flex;align-items:center;justify-content:center;gap:.7rem;width:100%;
-  background:var(--navy);color:#fff;padding:1.05rem;border-radius:12px;
-  font-size:1.05rem;font-weight:850;transition:.25s;
-  border:1px solid var(--navy);box-shadow:0 8px 22px rgba(10,23,38,.16);
-}
-.email-btn:hover{background:var(--navy-2);transform:translateY(-2px)}
-.contact-btn-icon{font-size:1.15rem}
-.direct-contact{
-  display:grid;grid-template-columns:1fr 1fr;gap:.75rem;
-  margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid #e7e5df;
-}
-.contact-detail{
-  display:flex;align-items:center;gap:.7rem;text-align:left;
-  padding:.8rem;border-radius:12px;background:#faf9f6;
-  border:1px solid #ece9e2;transition:.2s;min-width:0;
-}
-.contact-detail:hover{border-color:rgba(201,162,39,.5);transform:translateY(-2px)}
-.detail-icon{
-  width:38px;height:38px;flex:0 0 38px;border-radius:10px;
-  display:grid;place-items:center;background:rgba(201,162,39,.12);color:var(--gold);
-}
-.contact-detail small{display:block;color:#8a929a;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.6px}
-.contact-detail strong{display:block;color:var(--navy);font-size:.84rem;word-break:break-word}
-
-/* Motion */
-@keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:no-preference){
-  .service-card{animation:cardIn .65s ease both}
-  .service-card:nth-child(2){animation-delay:.05s}.service-card:nth-child(3){animation-delay:.1s}
-  .service-card:nth-child(4){animation-delay:.15s}.service-card:nth-child(5){animation-delay:.2s}.service-card:nth-child(6){animation-delay:.25s}
-}
-@keyframes cardIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-
-@media(max-width:850px){
-  .trust-bar{grid-template-columns:repeat(3,1fr);margin-left:5%;margin-right:5%}
-  .trust-item:nth-child(3){border-right:0}
-  .trust-item:nth-child(n+4){border-top:1px solid var(--line);padding-top:.8rem}
-  .services-grid{grid-template-columns:repeat(2,1fr)}
-  .about-inner{grid-template-columns:1fr;gap:2rem}.about-photo{min-height:260px}
-}
-@media(max-width:600px){
-  header{padding:.75rem 4%}.logo{font-size:1.3rem}.header-cta{padding:.55rem .95rem;font-size:.82rem}
-  .hero{min-height:610px;padding:6rem 5% 5rem;background-position:62% center}
-  .hero h1{font-size:clamp(2.55rem,13vw,4rem)}
-  .trust-bar{grid-template-columns:repeat(2,1fr);padding:1rem;margin-top:-25px}
-  .trust-item{border-right:0!important}.trust-item:nth-child(n+3){border-top:1px solid var(--line);padding-top:.75rem}
-  section{padding:4.3rem 5%}.services-grid{grid-template-columns:1fr}
-  .service-card{padding:1.45rem}.about-photo{min-height:220px}
-  .contact-box{padding:2rem 1.25rem}
-  .form-row{grid-template-columns:1fr}
-  .direct-contact{grid-template-columns:1fr}
-}
-</style>
-</head>
-<body>
-
-  <header>
-    <div class="logo">ALL<span>WORKS</span></div>
-    <a href="#contact" class="header-cta">Get a Quote</a>
-  </header>
-
-  <!-- Hero with rich background -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <div class="eyebrow">Home Repairs • Maintenance • Renovations</div>
-      <h1>SMALL JOBS.<br><span class="gold">BIG IMPACT.</span></h1>
-      <p>From quick repairs to complete renovations in Upington and the Northern Cape — we handle every job with skill, care and attention to detail.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-gold">Get a Free Quote</a>
-        <a href="tel:+27684833189" class="btn btn-outline">Call 068 483 3189</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust Bar -->
-  <div class="trust-bar">
-    <div class="trust-item"><div class="icon">✓</div><p>Reliable<br>& Trusted</p></div>
-    <div class="trust-item"><div class="icon">★</div><p>Quality<br>Craftsmanship</p></div>
-    <div class="trust-item"><div class="icon">⏱</div><p>On Time<br>& Efficient</p></div>
-    <div class="trust-item"><div class="icon">♥</div><p>Customer<br>Satisfaction</p></div>
-    <div class="trust-item"><div class="icon">R</div><p>Competitive<br>Pricing</p></div>
-  </div>
-
-  <!-- Services -->
-  <section class="services-section">
-    <div class="section-kicker">What we do</div>
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">One team for all your home improvement needs in Upington and surrounding areas.</p>
-    <div class="services-grid">
-      <div class="service-card"><div class="service-icon">🔧</div><h3>Home Repairs</h3><p>Fixing what matters — from leaks and broken fixtures to general household repairs.</p></div>
-      <div class="service-card"><div class="service-icon">🛠️</div><h3>Maintenance</h3><p>Keeping your home in top shape with regular upkeep and preventative care.</p></div>
-      <div class="service-card"><div class="service-icon">⚙️</div><h3>Installations</h3><p>Done right, the first time — fixtures, fittings, and more.</p></div>
-      <div class="service-card"><div class="service-icon">🏠</div><h3>Renovations</h3><p>Fresh spaces. Better living. From bathrooms to full home upgrades.</p></div>
-      <div class="service-card"><div class="service-icon">🎨</div><h3>Painting & Finishing</h3><p>Clean, professional finishes that protect and beautify your property.</p></div>
-      <div class="service-card"><div class="service-icon">🌿</div><h3>Outdoor Upgrades</h3><p>Decks, patios, and outdoor improvements built to last in the Northern Cape climate.</p></div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about">
-    <div class="about-inner">
-      <div>
-        <div class="section-kicker">Built on quality</div>
-        <h2 class="section-title">Your Home. Our Expertise.</h2>
-        <p>ALLWORKS is a local home-improvement team proudly serving <strong>Upington and the Northern Cape</strong>. We take on both small jobs and larger projects with the same level of care, skill and professionalism.</p>
-        <p>Fully insured. Free quotes. No job too big or too small.</p>
-        <div class="area-badge">Serving Upington & Northern Cape</div>
-      </div>
-      <div class="about-photo" aria-label="Professional home improvement project"></div>
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section class="contact" id="contact">
-    <div class="contact-box">
-      <div class="contact-kicker">Let's get started</div>
-      <h2>Request a Free Quote</h2>
-      <p>Tell us a little about the job and choose how you'd like to contact ALLWORKS.</p>
-
-      <form id="quoteForm" onsubmit="return sendToWhatsApp(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" autocomplete="name" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Your Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" autocomplete="tel" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Your Email Address</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="subject">What do you need help with?</label>
-          <input type="text" id="subject" name="subject" placeholder="e.g. Bathroom renovation, leak repair..." required>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="date">Preferred Date</label>
-            <input type="date" id="date" name="date">
-          </div>
-          <div class="form-group">
-            <label for="message">Extra Details <span>(optional)</span></label>
-            <input type="text" id="message" name="message" placeholder="Brief description of the job">
-          </div>
-        </div>
-
-        <button type="submit" class="whatsapp-btn">
-          <span class="contact-btn-icon">💬</span>
-          Request Quote on WhatsApp
-        </button>
-
-        <div class="contact-divider"><span>or contact us directly</span></div>
-
-        <a href="mailto:allworks.ruben@gmail.com?subject=ALLWORKS%20Quote%20Request" class="email-btn">
-          <span class="contact-btn-icon">✉</span>
-          Email ALLWORKS
-        </a>
-      </form>
-
-      <div class="direct-contact">
-        <a href="tel:+27684833189" class="contact-detail">
-          <span class="detail-icon">☎</span>
-          <span><small>Call us</small><strong>068 483 3189</strong></span>
-        </a>
-        <a href="mailto:allworks.ruben@gmail.com" class="contact-detail">
-          <span class="detail-icon">✉</span>
-          <span><small>Email us</small><strong>allworks.ruben@gmail.com</strong></span>
-        </a>
-      </div>
-
-      <p class="contact-note">Free Quotes • No Job Too Big or Too Small • Fully Insured</p>
-    </div>
-  </section>
-
-  <footer>
-    <p><strong class="gold">ALLWORKS</strong> — Installations | Repairs | Renovations</p>
-    <p>Upington, Northern Cape</p>
-    <p style="margin-top:0.8rem;">Let’s Build Something Great!</p>
-    <p style="margin-top:1rem; font-size:0.8rem; opacity:0.6;">© 2026 ALLWORKS. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Set today’s date as default
-    document.getElementById('date').valueAsDate = new Date();
-
-    function sendToWhatsApp(e) {
-      e.preventDefault();
-
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const subject = document.getElementById('subject').value.trim();
-      const date = document.getElementById('date').value;
-      const details = document.getElementById('message').value.trim();
-
-      let message = "Hi ALLWORKS, I would like a free quote.%0A%0A";
-      message += "Name: " + encodeURIComponent(name) + "%0A";
-      message += "Phone: " + encodeURIComponent(phone) + "%0A";
-      message += "Email: " + encodeURIComponent(email) + "%0A";
-      message += "Service needed: " + encodeURIComponent(subject) + "%0A";
-      if (date) {
-        message += "Preferred date: " + encodeURIComponent(date) + "%0A";
-      }
-      if (details) {
-        message += "Details: " + encodeURIComponent(details) + "%0A";
-      }
-      message += "%0APlease get back to me. Thank you!";
-
-      const url = "https://wa.me/27684833189?text=" + message;
-      window.open(url, '_blank');
-      return false;
+    :root{
+      --navy:#07121f;
+      --navy-2:#0f1f33;
+      --navy-3:#162a42;
+      --gold:#d4af37;
+      --gold-light:#f0d060;
+      --gold-dark:#a88b1f;
+      --cream:#f4efe7;
+      --cream-2:#efe6d7;
+      --white:#fff;
+      --text:#101922;
+      --muted:#596772;
+      --line:rgba(7,18,31,.12);
+      --shadow:0 22px 60px rgba(5,14,27,.18);
+      --success:#25d366;
     }
-  </script>
-</body>
-</html>
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,"Segoe UI",system-ui,-apple-system,sans-serif;
+      color:var(--text);
+      line-height:1.7;
+      background:var(--cream);
+      overflow-x:hidden;
+    }
+    a{text-decoration:none;color:inherit}
+    button,input{font:inherit}
+    img{max-width:100%;display:block}
+
+    .luxury-shell{
+      background:
+        radial-gradient(circle at top, rgba(212,175,55,.12), transparent 30%),
+        linear-gradient(180deg, #f6f1e9 0%, #f2ebdf 100%);
+    }
+
+    header{
+      background:rgba(7,18,31,.96);
+      color:#fff;
+      padding:.9rem 5%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:100;
+      box-shadow:0 6px 26px rgba(0,0,0,.28);
+      backdrop-filter:blur(14px);
+    }
+    .logo{
+      font-size:1.65rem;
+      font-weight:900;
+      letter-spacing:2px;
+      text-transform:uppercase;
+    }
+    .logo span{color:var(--gold-light)}
+    .header-cta{
+      background:linear-gradient(135deg,var(--gold),var(--gold-light));
+      color:var(--navy);
+      padding:.78rem 1.4rem;
+      border-radius:999px;
+      font-weight:800;
+      font-size:.95rem;
+      transition:.25s;
+      box-shadow:0 8px 24px rgba(212,175,55,.35);
+    }
+    .header-cta:hover{
+      transform:translateY(-2px);
+      box-shadow:0 12px 28px rgba(212,175,55,.45);
+    }
+
+    .hero{
+      min-height:760px;
+      padding:8rem 5% 7rem;
+      color:#fff;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      overflow:hidden;
+      background:
+        linear-gradient(108deg,rgba(5,12,22,.95) 0%,rgba(8,18,32,.88) 42%,rgba(9,18,29,.62) 100%),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2400&q=90")
+        center/cover no-repeat;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 78% 20%,rgba(212,175,55,.30),transparent 26%),
+        radial-gradient(circle at 20% 78%,rgba(212,175,55,.12),transparent 28%),
+        linear-gradient(to top,rgba(7,18,31,.35),transparent 50%);
+      pointer-events:none;
+    }
+    .hero:after{
+      content:"";
+      position:absolute;
+      inset:auto -12% -130px;
+      height:220px;
+      background:var(--cream);
+      transform:rotate(-2.8deg);
+      transform-origin:center;
+    }
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:960px;
+      animation:heroIn .85s ease both;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.7rem;
+      color:var(--gold-light);
+      font-weight:800;
+      letter-spacing:2.3px;
+      text-transform:uppercase;
+      font-size:.78rem;
+      margin-bottom:1.15rem;
+    }
+    .eyebrow:before,.eyebrow:after{
+      content:"";
+      width:38px;height:1.6px;background:var(--gold);
+    }
+    .hero h1{
+      font-size:clamp(2.8rem,7vw,5.6rem);
+      line-height:1.02;
+      font-weight:
